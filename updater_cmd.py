@@ -45,7 +45,7 @@ class Updater_github():
                 sys.exit('Failed to retrieve latest version')
 
         for asset in latest_assets:
-            if self.target_name in asset['name']:
+            if self.target_name.upper() in asset['name'].upper(): # insensitive name match
                 self.download_url = asset['browser_download_url']
                 self.target_fullname = asset['name']
                 break
