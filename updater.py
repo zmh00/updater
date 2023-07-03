@@ -16,7 +16,7 @@ def alert(windowtitle, windowcontent):
 
 
 def updater_github(owner, repo, target_file: str, version_tag: str, mode):
-    '''Update notification through comparison tag difference on Github release
+    '''Update notification through comparison tag difference with Github release
     - owner: name of the owner of the repository
     - repo: name of the repository 
     - target_file: name for search in assets
